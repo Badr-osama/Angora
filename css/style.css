@@ -1,0 +1,421 @@
+body{
+    --main-color: #F25454;
+    /* height: 1000em; */
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+h3,
+a{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Start section navbar */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link{
+    color: #F38383 !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black !important;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--main-color) !important;
+}
+/* End section navbar */
+
+/* Start section bg */
+.carousel-item{
+    height: 100vh;
+    background-size: cover;
+}
+.carousel-caption{
+    height: 60%;
+}
+.carousel-caption h1{
+    font-size: 60px; 
+}
+#bg .icons .setting{
+    top: 20%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#bg .icons .button{
+    width: 25px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    bottom: 5%;
+}
+#bg .icons .button::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: white;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    animation: moving 3s linear infinite alternate;
+}
+@keyframes moving{
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 70%;
+        opacity: 1;
+    }
+    75%{
+        top: 70%;
+        opacity: 0;
+    }
+    100%{
+        top: 10%;
+        opacity: 0;
+    }
+}
+.carousel-control-prev{
+    left: 0 !important;
+}
+/* End section bg */
+
+/* Start section about */
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#about h1{
+    color: #F2F2F2;
+    font-size: 100px;
+}
+#about h1::after{
+    content: "About Us";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+#about h3::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%,50%);
+    transition: all 0.5s ease-in-out;
+}
+#about .title:hover h3::before{
+    width: 60px;
+}
+#about .right .progress{
+    height: 4px;
+}
+#about .right .progress-bar{
+    background-color: var(--main-color);
+}
+/* End section about */
+
+/* Start section team */
+#team{
+    padding-bottom: 50px;
+}
+#team h1{
+    color: #F2F2F2;
+    font-size: 100px;
+}
+#team h1::after{
+    content: "Our Team";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+#team h3::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%,50%);
+    transition: all 0.5s ease-in-out;
+}
+#team .title:hover h3::before{
+    width: 60px;
+}
+#team .row .overlay1{
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: rgba(242, 84, 84, 0.85);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team .row .overlay:hover .overlay1{
+    height: 100%;
+}
+#team .row .overlay img{
+    transition: all 0.5s ease-in-out;
+}
+#team .row .overlay:hover img{
+    transform: scale(1.1);
+}
+/* End section team */
+
+/* Start section idea */
+#idea .container a{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color) !important;
+    color: white;
+    text-align: center;
+    padding: 4px 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+#idea .container a:hover{
+    background-color: #F38383 !important;
+    border: 1px solid #F38383 !important;
+}
+/* End section idea */
+
+/* Start section service */
+#service{
+    background: #FAFAFA;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#service h1{
+    color: #F2F2F2;
+    font-size: 100px;
+}
+#service h1::after{
+    content: "Service";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+#service h3::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%,50%);
+    transition: all 0.5s ease-in-out;
+}
+#service .title:hover h3::before{
+    width: 60px;
+}
+#service .service-item .fa-solid{
+    color: var(--main-color);
+}
+#service .service-item .fa-brands{
+    color: var(--main-color);
+}
+/* End section service */
+
+/* Start section client */
+#client{
+    padding-top: 50px;
+}
+#client h1{
+    color: #F2F2F2;
+    font-size: 100px;
+}
+#client h1::after{
+    content: "Client Reviews";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+#client h3::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%,50%);
+    transition: all 0.5s ease-in-out;
+}
+#client .title:hover h3::before{
+    width: 60px;
+}
+#client .carousel-inner{
+    height: 400px !important;
+}
+#client .clients .active{
+    opacity: 1;
+    width: 100px;
+}
+#client .clients img{
+    width: 70px;
+    opacity: 0.5;
+}
+/* End section client */
+
+/* Start section touch */
+#touch{
+    background: #FAFAFA;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#touch h1{
+    color: #F2F2F2;
+    font-size: 100px;
+}
+#touch h1::after{
+    content: "Get in Touch";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+#touch h3::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%,50%);
+    transition: all 0.5s ease-in-out;
+}
+#touch .title:hover h3::before{
+    width: 60px;
+}
+#touch .after h3{
+    transition: all 0.5s ease-in-out;
+}
+#touch .after:hover h3{
+    color: var(--main-color);
+}
+#touch .row .fa-solid{
+    color: var(--main-color);
+}
+#touch button{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+#touch button:hover{
+    background-color: #F38383;
+    border: 1px solid #F38383;
+}
+/* End section touch */
+
+/* Start section footer */
+#footer{
+    background: #1b1a1afc;
+}
+#footer .container .fa-solid{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f383836e;
+    transition: all 0.5s ease-in-out;
+}
+#footer .container .fa-solid:hover{
+    background-color: #F38383;
+}
+#footer .top{
+    top: 0 !important;
+    left: 50% !important;
+    transform: translate(-50%,-15%) !important;
+}
+#footer .top img{
+    cursor: pointer;
+}
+#footer .content2 p{
+    color: #a1a0a0 !important;
+}
+#footer .content2 .red{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+#footer .content2 .red:hover{
+    color: #F25454 !important;
+}
+#footer .bttns p{
+    color: white;
+    text-align: center;
+    border: 1px solid #a1a0a0;
+    padding: 5px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+#footer .final .defert{
+    font-size: 10px !important;
+    padding: 7px 25px !important;
+}
+#footer .final p:hover{
+    color: #F25454 !important;
+    border: 1px solid #F25454;
+}
+/* End section footer */
+
+/* Start section end */
+#end{
+    background: #1A1A1A;
+}
+#end .left a{
+    color: #a1a0a0;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+#end .left a:hover{
+    color: #F25454;
+}
+#end .right p span{
+    color: #a1a0a0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+#end .right p:hover span{
+    color: #F25454;
+}
+/* End section end */

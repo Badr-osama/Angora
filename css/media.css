@@ -1,0 +1,102 @@
+@media screen and (max-width:992px){
+    #about .title h3{
+        width: 100% !important;
+    }
+    #team .title h3{
+        width: 100% !important;
+    }
+    #service .title h3{
+        width: 100% !important;
+    }
+    #client .title h3{
+        width: 100% !important;
+    }
+    #client .carousel-inner h2{
+        width: 100% !important;
+    }
+    #touch .title h3{
+        width: 100% !important;
+    }
+   
+}
+@media screen and (max-width:767px){
+    .carousel-caption{
+        height: 80%;
+    }
+    .carousel-caption h1{
+        font-size: 40px;
+    }
+    #idea .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #end .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #end .right{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:576px){
+    .carousel-caption h1{
+        font-size: 30px;
+        width: 100% !important;
+    }
+    #about h1{
+        font-size: 70px;
+    }
+    #about h1::after{
+        font-size: 35px;
+    }
+    #about h3::before{
+        top: -20px;
+    }
+    #team h1{
+        font-size: 70px;
+    }
+    #team h1::after{
+        font-size: 35px;
+    }
+    #team h3::before{
+        top: -20px;
+    }
+    #service h1{
+        font-size: 70px;
+    }
+    #service h1::after{
+        font-size: 35px;
+    }
+    #service h3::before{
+        top: -20px;
+    }
+    #client h1{
+        font-size: 70px;
+    }
+    #client h1::after{
+        font-size: 25px;
+    }
+    #client h3::before{
+        top: -20px;
+    }
+    #client .carousel-inner .clients .none{
+        display: none;
+    }
+    #touch h1{
+        font-size: 70px;
+    }
+    #touch h1::after{
+        font-size: 30px;
+    }
+    #touch h3::before{
+        top: -20px;
+    }
+    #footer .final p{
+        width: 90px !important;
+        padding: 5px 15px !important;
+    }
+}
